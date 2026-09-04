@@ -13,5 +13,9 @@ app.register_blueprint(auth_blueprint)
 app.register_blueprint(task_bp)
 
 
+@app.get("/")
+def handle_home():
+    return "WELCOME TO TASK MANAGER"
+
 if __name__ == "__main__":
     app.run(debug=True, port=8000)
