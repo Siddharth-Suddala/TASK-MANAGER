@@ -7,7 +7,7 @@ from .blueprints.task import task_bp
 app = Flask(__name__)
 jwt = JWTManager(app)
 
-app.config['JWT_SECRET_KEY'] = "sjekci348dfktocfmekxcjemtkxmejfj5k3o"
+app.config['JWT_SECRET_KEY'] = "sjekci348dfktocfmekxcjemtkxmejfj5k3oiomp"
 
 app.register_blueprint(auth_blueprint)
 app.register_blueprint(task_bp)
